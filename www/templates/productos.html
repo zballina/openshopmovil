@@ -1,0 +1,11 @@
+<ion-view view-title="Productos" ng-init="init()">
+  <ion-content>
+    <div class="list">
+      <a  ng-repeat="item in productos" class="item item-thumbnail-left" href="#/app/productos/{{item.id}}">
+        <img src="img/veckman.jpg">
+        <h2>{{item.nombre}}</h2>
+        <p>{{item.descripcion}}</p>
+     </a>
+   </div>
+  </ion-content>
+</ion-view>

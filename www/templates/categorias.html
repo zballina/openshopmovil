@@ -1,0 +1,9 @@
+<ion-view view-title="Estimaciones" ng-init="init()">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="item in estimaciones" href="#/app/estimaciones/{{item.id}}">
+        {{item.title}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

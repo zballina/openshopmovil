@@ -1,0 +1,11 @@
+<ion-view view-title="Empresas" ng-init="init()">
+  <ion-content>
+    <div class="list">
+      <a  ng-repeat="item in empresas" class="item item-thumbnail-left" href="#/app/empresas/{{item.id}}">
+        <img src="img/veckman.jpg">
+        <h2>{{item.nombre}}</h2>
+        <p>{{item.calle}} {{item.colonia}}</p>
+     </a>
+   </div>
+  </ion-content>
+</ion-view>

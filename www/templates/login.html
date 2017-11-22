@@ -1,0 +1,23 @@
+<ion-view view-title="Login">
+  <ion-header-bar align-title="left" class="bar-positive">
+    <img src="img/openshop.svg" width="140px" height="40px"/>
+
+  </ion-header-bar>
+  <ion-content>
+    <form>
+      <div class="list list-inset">
+        <label class="item item-input item-floating-label">
+          <span class="input-label">Usuario</span>
+          <input type="text" placeholder="Usuario" ng-model="credenciales.username">
+        </label>
+        <label class="item item-input item-floating-label">
+          <span class="input-label">Contraseña</span>
+          <input type="password" placeholder="Contraseña" ng-model="credenciales.password">
+        </label>
+        <label class="item">
+          <button class="button icon-right ion-chevron-right button-calm" ng-click="autenticar(credenciales)">Iniciar sesión</button>
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-view>
